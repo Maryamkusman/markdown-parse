@@ -147,9 +147,24 @@ public class MarkdownParseTest {
     }
     @Test
     public void getLinksJoeTest9() throws IOException{
-        Path fileName = Path.of("https://www.twitter.com");
+        Path fileName = Path.of("./joe-test-files/test-file11.md");
         String contents = Files.readString(fileName);
         assertEquals(emptyArrayList, MarkdownParse.getLinks(contents));
     }
+    @Test
+    public void getLinksJoeTest10() throws IOException{
+        Path fileName = Path.of("./joe-test-files/test-file12.md");
+        String contents = Files.readString(fileName);
+        assertEquals(emptyArrayList, MarkdownParse.getLinks(contents));
+    }
+    @Test
+    public void getLinksJoeTest11() throws IOException{
+        Path fileName = Path.of("./joe-test-files/test-file13.md");
+        String contents = Files.readString(fileName);
+        assertEquals(emptyArrayList, MarkdownParse.getLinks(contents));
+    }
+
+
+
 
 }
