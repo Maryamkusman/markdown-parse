@@ -145,4 +145,11 @@ public class MarkdownParseTest {
         String contents = Files.readString(fileName);
         assertEquals(emptyArrayList, MarkdownParse.getLinks(contents));
     }
+    @Test
+    public void getLinksJoeTest9() throws IOException{
+        Path fileName = Path.of("https://www.twitter.com");
+        String contents = Files.readString(fileName);
+        assertEquals(emptyArrayList, MarkdownParse.getLinks(contents));
+    }
+
 }
